@@ -68,6 +68,10 @@ title('Two-dimensional tactical missile-target engagement simulation')
 xlabel('Time (sec)')
 ylabel('Acceleration of missile (G)')
 
+% the 7 is hardcoded for now
+if nt ~= 0
+    axis([0 (0.6*simTime) 0 7])
+end 
 
 function L = LeadAngle(Vt,Vm,Beta,Lambda)
 a = Vt*sin(Beta+Lambda);
