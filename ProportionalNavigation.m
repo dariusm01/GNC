@@ -3,7 +3,7 @@ h = 0.0002;
 
 %% Initial Missile values
 Vm = 3000; % Missile Velocity
-HE = 0; % Heading Error
+HE = -20; % Heading Error
 HE = deg2rad(HE);
 Rm1 = 0; % position (x)
 Rm2 = 10000; % position (y)
@@ -13,7 +13,7 @@ Vt = 1000; % Target Velocity
 Beta = 0; % Target Angular Velocity
 Rt1 = 40000; % position (x)
 Rt2 = Rm2; % position (y)
-nt = 3; 
+nt = 0; % target acceleration (in G's)
 
 %% Relative Position
 Rtm1 = Rt1 - Rm1;
