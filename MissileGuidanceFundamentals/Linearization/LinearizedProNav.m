@@ -39,7 +39,7 @@ fprintf("\nThe Miss Distance is approximately %g ft\n", abs(relativePos(end)))
 
 %% Plotting
 figure(1)
-plot(time,accelCmmd)
+plot(time/Tf,accelCmmd)
 grid on
 xlabel("Time (sec)")
 ylabel("Missile Acceleration (G)")
